@@ -13,4 +13,28 @@ public class ContatosApiApplication {
 		SpringApplication.run(ContatosApiApplication.class, args);
 	}
 
+	// GET - Buscar contatos
+	@GetMapping
+	public String listarContatos() {
+		return "Lista de contatos retornada com sucesso!";
+	}
+
+	// POST - Criar contato
+	@PostMapping
+	public String criarContato() {
+		return "Contato criado com sucesso!";
+	}
+
+	// PUT - Atualizar contato
+	@PutMapping
+	public String atualizarContato() {
+		return "Contato atualizado com sucesso!";
+	}
+
+	// DELETE - Deletar contato
+	@DeleteMapping
+	public String deletarContato() {
+		return "Contato deletado com sucesso!";
+	}
+
 }
